@@ -1,9 +1,10 @@
-const title = document.getElementById("title");
-const button = document.getElementById("changeBtn");
-const info = document.getElementById("info");
+let heading = document.getElementById("heading");
+let message = document.getElementById("message");
+let button = document.getElementById("btn");
 
-button.addEventListener("click", function() {
-  title.innerHTML = "Title Changed by External JS!";
-  title.style.color = "green";
-  info.innerHTML = "This message comes from an external file.";
-});
+console.log(btn)
+btn.innerHTML="clicked"
+message.innerHTML="DM"
+heading.innerHTML="WINDOW"
+heading.style.backgroundColor="yellow"
+// heading.style.border=

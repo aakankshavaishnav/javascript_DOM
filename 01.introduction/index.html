@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>DOM Manipulation</title>
-</head>
-<body>
-  <h1 id="heading">Hello World</h1>
-  <p id="message">This is a paragraph.</p>
-  <button id="btn">Click Me</button>
+<html lang="en">
 
-  <script src="script.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer>
+        let a = document.getElementById("head")
+        a.addEventListener("dbclick", () => a.innerHTML = "hello")
+    </script>
+</head>
+
+<body>
+   <h1 id="head">window</h1>
+    <button id="btn">click me</button>
+    <button id="btn2">change color</button>
+    <p id="tr">true/false</p>
 </body>
+
 </html>

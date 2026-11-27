@@ -1,70 +1,72 @@
-// let a = document.getElementById("btn");
-// let doc = { html: 1, }
-// document.getElementsByTagName("table")
-// document.getElementsByClassName("table")
-// document.querySelector("")
-// document.querySelectorAll(".class")
-// console.log(a)
-// a.addEventListener("click", () => {
-//     a.style.backgroundColor = "pink"
-//     a.innerHTML = "btn Clicked"
-// })
 
-// a.addEventListener("click", func);
-// function func() {
-//     a.style.backgroundColor = "pink";
-//     a.innerHTML = "btn Clicked";
-// }
+// // 1. Double click on heading
+// let a = document.getElementById("head");
 
-// let a = document.getElementById("btn")
-// let b = document.getElementById("btn2")
-// console.log(b)
-// console.log(a);
-// a.addEventListener("click", func);
-// function func() {
-//     a.style.backgroundColor = "pink";
-//     b.style.backgroundColor = "red";
-// }
+// a.addEventListener("dblclick", function() {
+//     a.innerHTML = "Hello";
+// });
 
-// let a = document.getElementById("btn");
 
-// let originalText = a.innerHTML;
-// let originalColor = a.style.backgroundColor;
+// // 2. Generate random number on button click
+// let b = document.querySelector("#btn");
 
-// let isClicked = false;
-
-// a.addEventListener("click", func);
+// b.addEventListener("click", func);
 
 // function func() {
-//   if (isClicked === false) {
-
-//     a.style.backgroundColor = "pink";
-//     a.innerHTML = "btn Clicked";
-//     isClicked = true;
-//   } else {
-
-//     a.style.backgroundColor = originalColor;
-//     a.innerHTML = originalText;
-//     isClicked = false;
-//   }
+//     let num = Math.random();
+//     console.log(num);
 // }
 
 
-// =========================
+// // 3. Change heading color
+// let c = document.querySelector("#btn2");
 
-let a =document.getElementById("btn")
-let c=document.getElementsByTagName("body");
-console.log(c[0])
-let bool =false;
-a.addEventListener("mousedown",func);
-function func(){
-    if(bool){
-        a.style.backgroundColor="pink"
-        a.innerHTML="clicked"
-        bool=false
-    }
-    else{
-        a.style.backgroundColor="yellow"
-        bool=true
-    }
+// c.addEventListener("click", function() {
+//     a.style.color = "red";
+// });
+
+
+// // 4. Change paragraph text
+// let d = document.querySelector("#tr");
+
+// d.addEventListener("click", function() {
+//     d.innerHTML = "True";
+// });
+
+
+// // 5. Generate random number using input button
+// let e = document.querySelector(".a");
+
+// e.addEventListener("click", function() {
+//     console.log(Math.random());
+// });
+// change page color
+let a = document.querySelector("#btn2")
+a.addEventListener("click", funct)
+function funct() {
+        let a = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        let c = Math.floor(Math.random() * 256);
+        document.body.style.backgroundColor =`rgb(${a}, ${b}, ${c})`
 }
+let inp=document.getElementById("inp")
+inp.addEventListener("keypress",key)
+function key(e){
+if (e.key=="f"){
+    console.log("in function")
+     let a = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        let c = Math.floor(Math.random() * 256);
+        document.body.style.backgroundColor =`rgb(${a}, ${b}, ${c})`
+}
+}
+let form =document.getElementById("form")
+let n=document.getElementById("firstName")
+let e=document.getElementById("email")
+console.log(form)
+form.addEventListener("submit",submittedData)
+function submittedData(even){
+    let m=n.innerHtml;
+    console.log(n)
+}
+
